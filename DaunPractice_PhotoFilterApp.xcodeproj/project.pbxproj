@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		588D6CFDC2E0489AD1811C8F /* Pods_DaunPractice_PhotoFilterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BB188FF7ACC568EDF652241 /* Pods_DaunPractice_PhotoFilterApp.framework */; };
 		D5423A9024D6802A00C5D698 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5423A8F24D6802A00C5D698 /* AppDelegate.swift */; };
 		D5423A9224D6802A00C5D698 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5423A9124D6802A00C5D698 /* SceneDelegate.swift */; };
 		D5423A9424D6802A00C5D698 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5423A9324D6802A00C5D698 /* ViewController.swift */; };
@@ -14,9 +15,15 @@
 		D5423A9A24D6802A00C5D698 /* DaunPractice_PhotoFilterApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D5423A9824D6802A00C5D698 /* DaunPractice_PhotoFilterApp.xcdatamodeld */; };
 		D5423A9C24D6802C00C5D698 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5423A9B24D6802C00C5D698 /* Assets.xcassets */; };
 		D5423A9F24D6802C00C5D698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5423A9D24D6802C00C5D698 /* LaunchScreen.storyboard */; };
+		D5423AA724D687F400C5D698 /* PhotosSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5423AA624D687F400C5D698 /* PhotosSelectViewController.swift */; };
+		D5423AA924D6882F00C5D698 /* PhotosSelectCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5423AA824D6882F00C5D698 /* PhotosSelectCollectionViewCell.swift */; };
+		D5423AAB24D6884F00C5D698 /* FilterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5423AAA24D6884F00C5D698 /* FilterService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0217FE3C2147D4DAF23CEAA5 /* Pods-DaunPractice_PhotoFilterApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaunPractice_PhotoFilterApp.debug.xcconfig"; path = "Target Support Files/Pods-DaunPractice_PhotoFilterApp/Pods-DaunPractice_PhotoFilterApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3BB188FF7ACC568EDF652241 /* Pods_DaunPractice_PhotoFilterApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaunPractice_PhotoFilterApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		586A68CA41BCCD1838860AEF /* Pods-DaunPractice_PhotoFilterApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaunPractice_PhotoFilterApp.release.xcconfig"; path = "Target Support Files/Pods-DaunPractice_PhotoFilterApp/Pods-DaunPractice_PhotoFilterApp.release.xcconfig"; sourceTree = "<group>"; };
 		D5423A8C24D6802A00C5D698 /* DaunPractice_PhotoFilterApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DaunPractice_PhotoFilterApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5423A8F24D6802A00C5D698 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5423A9124D6802A00C5D698 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +33,9 @@
 		D5423A9B24D6802C00C5D698 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5423A9E24D6802C00C5D698 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5423AA024D6802C00C5D698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5423AA624D687F400C5D698 /* PhotosSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosSelectViewController.swift; sourceTree = "<group>"; };
+		D5423AA824D6882F00C5D698 /* PhotosSelectCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosSelectCollectionViewCell.swift; sourceTree = "<group>"; };
+		D5423AAA24D6884F00C5D698 /* FilterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588D6CFDC2E0489AD1811C8F /* Pods_DaunPractice_PhotoFilterApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A7066CBEF6B5A65A745A716 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3BB188FF7ACC568EDF652241 /* Pods_DaunPractice_PhotoFilterApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D5423A8324D6802A00C5D698 = {
 			isa = PBXGroup;
 			children = (
 				D5423A8E24D6802A00C5D698 /* DaunPractice_PhotoFilterApp */,
 				D5423A8D24D6802A00C5D698 /* Products */,
+				EFA35C302AAA2879BBC4CF61 /* Pods */,
+				8A7066CBEF6B5A65A745A716 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,8 +87,20 @@
 				D5423A9D24D6802C00C5D698 /* LaunchScreen.storyboard */,
 				D5423AA024D6802C00C5D698 /* Info.plist */,
 				D5423A9824D6802A00C5D698 /* DaunPractice_PhotoFilterApp.xcdatamodeld */,
+				D5423AA624D687F400C5D698 /* PhotosSelectViewController.swift */,
+				D5423AA824D6882F00C5D698 /* PhotosSelectCollectionViewCell.swift */,
+				D5423AAA24D6884F00C5D698 /* FilterService.swift */,
 			);
 			path = DaunPractice_PhotoFilterApp;
+			sourceTree = "<group>";
+		};
+		EFA35C302AAA2879BBC4CF61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0217FE3C2147D4DAF23CEAA5 /* Pods-DaunPractice_PhotoFilterApp.debug.xcconfig */,
+				586A68CA41BCCD1838860AEF /* Pods-DaunPractice_PhotoFilterApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5423AA324D6802C00C5D698 /* Build configuration list for PBXNativeTarget "DaunPractice_PhotoFilterApp" */;
 			buildPhases = (
+				BC63C8FC0AC14A1F54CC570D /* [CP] Check Pods Manifest.lock */,
 				D5423A8824D6802A00C5D698 /* Sources */,
 				D5423A8924D6802A00C5D698 /* Frameworks */,
 				D5423A8A24D6802A00C5D698 /* Resources */,
+				D6E0C00D999EE06670104E7F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,15 +171,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BC63C8FC0AC14A1F54CC570D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DaunPractice_PhotoFilterApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6E0C00D999EE06670104E7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaunPractice_PhotoFilterApp/Pods-DaunPractice_PhotoFilterApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaunPractice_PhotoFilterApp/Pods-DaunPractice_PhotoFilterApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DaunPractice_PhotoFilterApp/Pods-DaunPractice_PhotoFilterApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D5423A8824D6802A00C5D698 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D5423A9424D6802A00C5D698 /* ViewController.swift in Sources */,
+				D5423AA924D6882F00C5D698 /* PhotosSelectCollectionViewCell.swift in Sources */,
 				D5423A9024D6802A00C5D698 /* AppDelegate.swift in Sources */,
+				D5423AAB24D6884F00C5D698 /* FilterService.swift in Sources */,
 				D5423A9224D6802A00C5D698 /* SceneDelegate.swift in Sources */,
 				D5423A9A24D6802A00C5D698 /* DaunPractice_PhotoFilterApp.xcdatamodeld in Sources */,
+				D5423AA724D687F400C5D698 /* PhotosSelectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +366,7 @@
 		};
 		D5423AA424D6802C00C5D698 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0217FE3C2147D4DAF23CEAA5 /* Pods-DaunPractice_PhotoFilterApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +385,7 @@
 		};
 		D5423AA524D6802C00C5D698 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 586A68CA41BCCD1838860AEF /* Pods-DaunPractice_PhotoFilterApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

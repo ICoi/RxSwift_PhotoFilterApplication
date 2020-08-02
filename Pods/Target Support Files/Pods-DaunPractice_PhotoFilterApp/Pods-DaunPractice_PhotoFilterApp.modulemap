@@ -1,0 +1,6 @@
+framework module Pods_DaunPractice_PhotoFilterApp {
+  umbrella header "Pods-DaunPractice_PhotoFilterApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
